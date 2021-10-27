@@ -41,7 +41,7 @@ else if(playerInput == '2'){
 	playerMove = 'papier';
   }
 
-  else(playerInput == '3'){
+else if(playerInput == '3'){
 	playerMove = 'nożyce';
   }
 
@@ -89,6 +89,6 @@ else if( computerMove == 'nożyce' && playerMove == 'papier'){
   printMessage('Przegrywasz!');
 }
 
-else ( computerMove == 'kamień' && playerMove == 'nieznany ruch'){
+else if( computerMove == 'kamień' && playerMove == 'nieznany ruch'){
   printMessage('Gra nierozstrzygnieta!');
 }
