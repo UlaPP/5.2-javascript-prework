@@ -2,11 +2,11 @@ function getMoveName(argMoveId){
   if(argMoveId == 1){
     return 'kamień';
   }
-  else if(argMoveId == 2{
-    return 'papier'
+  else if(argMoveId == 2){
+    return 'papier';
   }
-  else if(argMoveId == 3{
-    return 'nożyce'
+  else if(argMoveId == 3){
+    return 'nożyce';
   }
   printMessage('Nie znam ruchu o id ' + argMoveId + '.');
   return 'nieznany ruch';
