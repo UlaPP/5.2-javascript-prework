@@ -101,26 +101,26 @@ function playGame(playerInput) {
   displayResult(computerMove, playerMove);
 }
 
-function buttonClicked(){
+function buttonRockClicked(){
   printMessage('Wybrano ruch: Kamień');
 }
 
-let testButton = document.getElementById('Kamień');
+let buttonRockClicked = document.getElementById('play-rock');
 
 testButton.addEventListener('click', buttonClicked);
 
-function buttonClicked(){
+function buttonPaperClicked(){
   printMessage('Wybrano ruch: Papier');
 }
 
-let testButton = document.getElementById('Papier');
+let buttonPaperClicked = document.getElementById('play-paper');
 
-testButton.addEventListener('click', buttonClicked);
+testButton.addEventListener('click', buttonPaperClicked);
 
-function buttonClicked(){
+function buttonScissorsClicked(){
   printMessage('Wybrano ruch: Nożyce');
 }
 
-let testButton = document.getElementById('Nożyce');
+let testButton = document.getElementById('play-scissors');
 
-testButton.addEventListener('click', buttonClicked);
+testButton.addEventListener('click', buttonScissorsClicked);
