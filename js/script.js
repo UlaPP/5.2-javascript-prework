@@ -1,4 +1,5 @@
 function playGame(playerInput) {
+  clearMessages()
   function getMoveName(argMoveId){
     if(argMoveId == 1){
       return 'kamień';
@@ -102,25 +103,25 @@ function playGame(playerInput) {
 }
 
 function buttonRockClicked(){
-  printMessage('Wybrano ruch: Kamień');
+  playGame(1);
 }
 
-let buttonRockClicked = document.getElementById('play-rock');
+let buttonRock = document.getElementById('play-rock');
 
-testButton.addEventListener('click', buttonClicked);
+buttonRock.addEventListener('click', buttonRockClicked);
 
 function buttonPaperClicked(){
-  printMessage('Wybrano ruch: Papier');
+  playGame(2);
 }
 
-let buttonPaperClicked = document.getElementById('play-paper');
+let buttonPaper = document.getElementById('play-paper');
 
-testButton.addEventListener('click', buttonPaperClicked);
+buttonPaper.addEventListener('click', buttonPaperClicked);
 
 function buttonScissorsClicked(){
-  printMessage('Wybrano ruch: Nożyce');
+  playGame(3);
 }
 
-let testButton = document.getElementById('play-scissors');
+let buttonScissors = document.getElementById('play-scissors');
 
-testButton.addEventListener('click', buttonScissorsClicked);
+buttonScissors.addEventListener('click', buttonScissorsClicked);
