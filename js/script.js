@@ -1,3 +1,4 @@
+{
 function playGame(playerInput) {
   clearMessages()
   function getMoveName(argMoveId){
@@ -10,8 +11,8 @@ function playGame(playerInput) {
     else if(argMoveId == 3){
       return 'nożyce';
     }
-    printMessage('Nie znam ruchu o id ' + argMoveId + '.');
-    return 'nieznany ruch';
+    /*printMessage('Nie znam ruchu o id ' + argMoveId + '.');
+    return 'nieznany ruch';   nie ma takiego przypadku?*/
   }
 
   let randomNumber = Math.floor(Math.random() * 3 + 1);
@@ -106,15 +107,15 @@ function buttonRockClicked(){
   playGame(1);
 }
 
-let buttonRock = document.getElementById('play-rock');
+const buttonRock = document.getElementById('play-rock');
 
-buttonRock.addEventListener('click', buttonRockClicked);
+buttonRock.addEventListener('click',  buttonRockClicked);
 
 function buttonPaperClicked(){
   playGame(2);
 }
 
-let buttonPaper = document.getElementById('play-paper');
+const buttonPaper = document.getElementById('play-paper');
 
 buttonPaper.addEventListener('click', buttonPaperClicked);
 
@@ -122,6 +123,7 @@ function buttonScissorsClicked(){
   playGame(3);
 }
 
-let buttonScissors = document.getElementById('play-scissors');
+const buttonScissors = document.getElementById('play-scissors');
 
 buttonScissors.addEventListener('click', buttonScissorsClicked);
+}
